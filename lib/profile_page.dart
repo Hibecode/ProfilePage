@@ -6,6 +6,7 @@ import 'package:profilepage/appbar_widget.dart';
 import 'package:profilepage/model/user.dart';
 import 'package:profilepage/utils/user_pref.dart';
 import 'package:profilepage/widget/button_widget.dart';
+import 'package:profilepage/widget/numbers_widget.dart';
 import 'package:profilepage/widget/profile_widget.dart';
 
 
@@ -32,6 +33,7 @@ class _ProfilePageState extends State<ProfilePage> {
           buildName(user),
           const SizedBox(height: 24),
           Center(child: buildUpgradeButton()),
+          NumbersWidget()
         ],
       )
     );

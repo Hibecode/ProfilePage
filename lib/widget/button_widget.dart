@@ -19,7 +19,7 @@ class ButtonWidget extends StatelessWidget {
       shape: StadiumBorder(),
       onPrimary: Colors.white,
       elevation: 5,
-      padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
     ),
     child: Text(text),
     onPressed: onClicked,
