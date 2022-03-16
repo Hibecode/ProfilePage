@@ -33,7 +33,10 @@ class _ProfilePageState extends State<ProfilePage> {
           buildName(user),
           const SizedBox(height: 24),
           Center(child: buildUpgradeButton()),
-          NumbersWidget()
+          SizedBox(height: 24),
+          NumbersWidget(),
+          const SizedBox(height: 30),
+          aboutText(user)
         ],
       )
     );
@@ -57,6 +60,24 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget buildUpgradeButton() => ButtonWidget(
     text: 'Upgrade To PRO',
     onClicked: () {},
+  );
+
+
+  Widget aboutText(User user) => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 48),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+            'About',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+        const SizedBox(height: 16),
+        Text(
+            user.about,
+            style: TextStyle(fontSize: 16, height: 1.4))
+      ],
+
+    ),
   );
 
 

@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'User Profile',
       theme: ThemeData(
-        primaryColor: Colors.blueGrey
+        primaryColor: Colors.blueGrey,
+        dividerColor: Colors.black
       ),
       home: ProfilePage(),
     );
